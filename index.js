@@ -1,28 +1,35 @@
 let button = document.getElementById("button")
+let button1 = document.getElementById("button1")
         let input = document.getElementById("input")
         let body = document.querySelector("body")
         let dark = document.getElementById("dark")
+        let light = document.getElementById("light")
         console.log(body)
-        dark.addEventListener("dblclick", function(){
-            if(body.style.background = "linear-gradient(to top,rgb(247, 243, 243), rgb(100 250 250))"){
+        dark.addEventListener("click", function(){
+            if(body.style.background = "linear-gradient(to top, rgb(247, 243, 243), rgb(100 250 250))"){
                 body.style.background = "#000"
                 body.style.color = "#fff"
-                 dark.textContent = "BrightMode"
+                dark.id ="disDark"
+                light.id = "appLight"
+                //  dark.textContent = "BrightMode"
             }
 
+
         })
-        // dark.addEventListener("doubleClick", function(){
-        //     alert()
-        //     if(body.style.background = "#000"){
-        //         body.style.background = "linear-gradient(to top,rgb(247, 243, 243), rgb(100 250 250))"
-        //     }
-        // })
+        light.addEventListener("click", function(){
+            if(body.style.background = "#000"){
+                body.style.background = "linear-gradient(to top,rgb(247, 243, 243), rgb(100 250 250))"
+                body.style.color = "#000"
+                light.id = "light"
+                dark.id = "dark"
+            }
+        })
          
         console.log("hello world")
 
-        button.addEventListener("click", function(){
+        button1.addEventListener("click", function(){
             console.log("click")
-                input.value = " ";
+                input.value = "";
             
         })
 
