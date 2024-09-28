@@ -54,7 +54,12 @@ input{
     margin-top: 5px;
 
 }
+input::placeholder{
+    text-align: right;
+    /* margin-left: 120px; */
+}
 button{
+    color:#fff;
     width:200px;;
     height:40px;
     padding: 7px 7px 7px 7px;
@@ -113,4 +118,35 @@ footer{
     }
 
 
+}
+#disDark{
+    display: none;
+}
+#appLight{
+    color: white;
+    width:200px;
+    height:40px;
+    padding: 7px 7px 7px 7px;
+    background-color: blue;
+    outline:none;
+    border: 2px solid #fff;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+#light{
+    display: none;
+}
+#button1{
+    color: #fff;
+    width:200px;;
+    height:40px;
+    padding: 7px 7px 7px 7px;
+    background-color: blue;
+    outline:none;
+    border: 2px solid #fff;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
 }
